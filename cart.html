@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--? CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- *? Title | Logo -->
+    <title>Shopping Bag</title>
+    <link rel="icon" href="https://paytm.com/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- ! Popups -->
+    <div class="go-cart" style="border-top: 0.07rem solid #54c1ef">
+      <h4 class="basket-cost">
+        Basket Cost : ₹<span class="bskt-cost">0</span>
+      </h4>
+      <a href="placeorder.html" class="basket-link">
+        <h4 class="basket-link-text">Place Order</h4>
+      </a>
+    </div>
+    <header>
+      <a href="index.html"
+        ><img
+          src="https://download.logo.wine/logo/Paytm/Paytm-Logo.wine.png"
+          alt="PayTm Groceries"
+          class="logo"
+      /></a>
+      <div class="cart-ic">
+        <a href="cart.html"
+          ><ion-icon class="cart-icon" name="basket"></ion-icon
+        ></a>
+        <a href="cart.html"><span class="cart-span">0</span></a>
+      </div>
+    </header>
+
+    <section class="products-container">
+      <div class="product-header">
+        <h5 class="prod-title">Product</h5>
+        <h5 class="prod-price">Price</h5>
+        <h5 class="prod-quantity">Quantity</h5>
+        <h5 class="prod-total">Total</h5>
+      </div>
+      <div class="products"></div>
+    </section>
+
+    <!--! Sample Scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!--! Custom Scripts -->
+    <script src="cartadd.js"></script>
+  </body>
+</html>

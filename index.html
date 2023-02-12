@@ -1,0 +1,2053 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="flickisity.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- *? Title | Logo -->
+    <title>PayTm Groceries</title>
+    <link rel="icon" href="https://paytm.com/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- ! Popups  -->
+    <div class="item-added">
+      <ion-icon name="bag-check" class="bagcheck"></ion-icon>
+      <span class="it-ad-text">item added to bag</span>
+    </div>
+
+    <div class="go-cart">
+      <h4 class="basket-cost">
+        Basket Cost : ₹<span class="bskt-cost">0</span>
+      </h4>
+      <a href="cart.html" class="basket-link">
+        <h4 class="basket-link-text">Go to Basket</h4>
+      </a>
+    </div>
+    <!--! Header-->
+    <header>
+      <a href="#"
+        ><img
+          src="https://download.logo.wine/logo/Paytm/Paytm-Logo.wine.png"
+          alt="PayTm Groceries"
+          class="logo"
+      /></a>
+      <div class="cart-ic">
+        <a href="cart.html"
+          ><ion-icon class="cart-icon" name="basket"></ion-icon
+        ></a>
+        <a href="cart.html"><span class="cart-span">0</span></a>
+      </div>
+    </header>
+    <!-- *! Card Section -->
+    <section>
+      <!-- Slider main container -->
+      <div class="swiper cards">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide card">
+            <h3 class="swipe-text">Get Min 70% OFF on your First Order</h3>
+          </div>
+          <div class="swiper-slide card">
+            <h3 class="swipe-text">Free 1 Day Delivery All Over India</h3>
+          </div>
+          <div class="swiper-slide card">
+            <h3 class="swipe-text">Best Groceries Deliverd at Best Price</h3>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <!-- *! Top Picks Section -->
+    <section id="product-section">
+      <!-- *? Header of the Section -->
+      <div class="prod-header">
+        <h2 class="heading-section">Top Picks</h2>
+        <a class="head-link button--toggle" href="#" onClick="return false;"
+          >View all</a
+        >
+      </div>
+      <!-- *? Top Picks Figure with Item Article -->
+      <figure class="prod-line" id="top-picks">
+        <div class="carousel">
+          <!--todo Cart Items individual -->
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹129</span><span class="sell">₹49</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://www.kissan.in/sk-eu/content/dam/brands/kissan/india/2329806-kissan-950-doy-pack.png.rendition.767.767.png"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Kissan Ketchup <span class="quantity">1Kg</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹109</span><span class="sell">₹39</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://simg.nicepng.com/png/small/253-2531380_real-mixed-fruit-juice-1l.png"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Real Mixed Fruit <span class="quantity">1L</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹58</span><span class="sell">₹29</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://purepng.com/public/uploads/large/purepng.com-coca-coladrinks-coca-cola-941524644291ozoln.png"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Coca-Cola <span class="quantity">1L</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹599</span><span class="sell">₹179</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://www.nicepng.com/png/detail/251-2511457_chocolates-ferrero-rocher-png.png"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Ferroro Roch... <span class="quantity">495g</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹40</span><span class="sell">₹9</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://m.media-amazon.com/images/I/71XJHswiGqL._SL1500_.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Lay's Chips <span class="quantity">190g</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹448</span><span class="sell">₹135</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://m.media-amazon.com/images/I/81pDk4-gYQL._SL1500_.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Ashirwad Aata <span class="quantity">10Kg</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹198</span><span class="sell">₹59</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://m.media-amazon.com/images/I/71MqO4+EtpL._SL1500_.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Haldiram Panchr... <span class="quantity">400g</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹295</span><span class="sell">₹85</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://rukminim1.flixcart.com/image/416/416/kx6fwcw0/chocolate/j/q/p/-original-imag9zz8n9vqmkaz.jpeg?q=70"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Dairy Milk Silk <span class="quantity">300g</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹125</span><span class="sell">₹39</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://rukminim1.flixcart.com/image/416/416/xif0q/energy-sport-drink-mix/q/u/e/-original-imagjt5cwsqkzfgr.jpeg?q=70"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Red Bull Ene... <span class="quantity">125mL</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹489</span><span class="sell">₹119</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://rukminim1.flixcart.com/image/416/416/xif0q/cereal-flake/d/e/t/-original-imagg5aawms8hpht.jpeg?q=70"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Kellogg's Muesli <span class="quantity">1Kg</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹158</span><span class="sell">₹59</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://befreshgroceries.com/wp-content/uploads/2020/12/719819910159419347736620696344188258054.png"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Maggie Family Pack <span class="quantity">10N</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹215</span><span class="sell">₹69</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://rukminim1.flixcart.com/image/416/416/l4bn5ow0/jam-spread/h/f/t/-original-imagf8tgragtc3j4.jpeg?q=70"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Funfoods Mayon... <span class="quantity">875g</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹78</span><span class="sell">₹39</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://www.jiomart.com/images/product/600x600/490001545/amul-gold-homogenised-standardised-milk-1-l-tetra-pak-product-images-o490001545-p490001545-0-202203170625.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Amul Gold Full Cr... <span class="quantity">1L</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹398</span><span class="sell">₹139</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://www.jiomart.com/images/product/600x600/490001396/britannia-cheese-slices-480-g-pack-product-images-o490001396-p490001396-0-202203150438.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Britania Cheese Sli... <span class="quantity">25N</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹928</span><span class="sell">₹199</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://rukminim1.flixcart.com/image/416/416/kwv0djk0/nut-dry-fruit/h/u/l/-original-imag9fuszhfjn6bb.jpeg?q=70"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Happilo Pista <span class="quantity">500g</span>
+            </h4>
+            <a class="add-cart" href="#" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+        </div>
+      </figure>
+    </section>
+    <!--! Snacks Section -->
+    <section id="product-section">
+      <!-- *? Header of the Section -->
+      <div class="prod-header">
+        <h2 class="heading-section">Snacks</h2>
+        <a class="head-link button--toggle1" href="#" onClick="return false;"
+          >View all</a
+        >
+      </div>
+      <!-- *? Top Picks Figure with Item Article -->
+      <figure class="prod-line" id="top-picks">
+        <div class="carousel1">
+          <!--todo Cart Items individual -->
+
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹170</span><span class="sell">₹49</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://www.bigbasket.com/media/uploads/p/xxl/286082-2_4-sunfeast-dark-fantasy-choco-fills-biscuits-cookies.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Dark Fantasy Biscuit <span class="quantity">300g</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹70</span><span class="sell">₹19</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://osiamart.com/image/cache/catalog/cold-drinks/noodlle/CADBURY%20CHOCOBAKES%20COOKIES150GM-550x550.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Cadbury Chocobakes <span class="quantity">150g</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹170</span><span class="sell">₹49</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://www.bigbasket.com/media/uploads/p/l/100423120_29-cadbury-oreo-creame-biscuit-vanilla.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Oreo Choco <span class="quantity">250g</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹229</span><span class="sell">₹89</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://rukminim1.flixcart.com/image/416/416/xif0q/snack-savourie/t/8/x/-original-imaggrakmzxqe8ef.jpeg?q=70"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Bicano Aloo Bhujia <span class="quantity">1Kg</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹129</span><span class="sell">₹35</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://rukminim1.flixcart.com/image/416/416/xif0q/chips/g/y/p/-original-imagg5abtvdbjzy5.jpeg?q=70"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Pringles Cream Onion <span class="quantity">150g</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹49</span><span class="sell">₹9</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://rukminim1.flixcart.com/image/416/416/xif0q/chips/p/y/x/-original-imagkwamre3u7uga.jpeg?q=70"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Lay's Tomato Tango <span class="quantity">170g</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹199</span><span class="sell">₹79</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://rukminim1.flixcart.com/image/416/416/xif0q/snack-savourie/9/t/i/-original-imaggrahy3ewnnfh.jpeg?q=70"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Bicano Khatta Meetha <span class="quantity">1Kg</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹59</span><span class="sell">₹19</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://rukminim1.flixcart.com/image/416/416/xif0q/chips/w/c/j/-original-imagmg5zt4tnzzv6.jpeg?q=70"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Dorito Cheese <span class="quantity">150g</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹129</span><span class="sell">₹39</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://rukminim1.flixcart.com/image/416/416/l111lzk0/drinks-juice/h/6/b/-original-imagczhkegn9chnh.jpeg?q=70"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Real Apple Juice <span class="quantity">1L</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹119</span><span class="sell">₹39</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://cdn01.pharmeasy.in/dam/products_otc/T95784/real-fruit-power-guava-juice-1l-2-1671744250.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Real Juice Guava <span class="quantity">1L</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹59</span><span class="sell">₹29</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://m.media-amazon.com/images/I/61Ks4rgOAeL._SX679_.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Thums Up <span class="quantity">1L</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹59</span><span class="sell">₹29</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://m.media-amazon.com/images/I/510TTRVmhzL._SX679_.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Sprite <span class="quantity">1L</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹89</span><span class="sell">₹29</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://m.media-amazon.com/images/I/71cw2JLKmvL._SX679_.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Hide & Seek Biscuit <span class="quantity">200g</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹59</span><span class="sell">₹29</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://m.media-amazon.com/images/I/61j28cBVCGL._SX679_.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Haldiram's Peanuts <span class="quantity">250g</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹39</span><span class="sell">₹9</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://m.media-amazon.com/images/I/61+uMlNx6tL._SL1500_.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Britania Cake <span class="quantity">100g</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹599</span><span class="sell">₹99</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://m.media-amazon.com/images/I/71M6kMdnqTL._SX679_.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Happilo California Almonds <span class="quantity">500g</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹449</span><span class="sell">₹119</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://rukminim1.flixcart.com/image/416/416/kwv0djk0/nut-dry-fruit/i/3/6/-original-imag9fus2bbkmge7.jpeg?q=70"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Happilo Cashew <span class="quantity">500g</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹145</span><span class="sell">₹49</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://m.media-amazon.com/images/I/61Ln+3d4UuL._SX522_.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Heyshey's Milkshake <span class="quantity">3N</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+        </div>
+      </figure>
+    </section>
+    <!--! Kitchen Essentials  -->
+    <!-- *? Header of the Section -->
+    <section id="product-section">
+      <div class="prod-header">
+        <h2 class="heading-section">Kitchen Essentials</h2>
+        <a class="head-link button--toggle" href="#" onClick="return false;"
+          >View all</a
+        >
+      </div>
+      <!-- *? Top Picks Figure with Item Article -->
+      <figure class="prod-line" id="top-picks" style="overflow-x: hidden">
+        <div class="carousel2">
+          <!--todo Cart Items individual -->
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹140</span><span class="sell">₹45</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://m.media-amazon.com/images/I/516orkbeQPL.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Fortune Besan <span class="quantity">1Kg</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹1099</span><span class="sell">₹349</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://m.media-amazon.com/images/I/91MZComV1xL._SX679_.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              India Gate Basmati <span class="quantity">5Kg</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹145</span><span class="sell">₹49</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://m.media-amazon.com/images/I/71JUIxzdXXL._SX679_.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Britania Rusk <span class="quantity">750g</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹599</span><span class="sell">₹149</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://rukminim1.flixcart.com/image/416/416/k9k8wi80/coffee/4/8/y/100-classic-instant-coffee-mason-jar-nescafe-original-imafrbtbhpybzz7z.jpeg?q=70"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Nescafe Coffee <span class="quantity">350g</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹290</span><span class="sell">₹89</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://rukminim1.flixcart.com/image/416/416/kkimfm80/tea/v/k/1/premium-pouch-regular-tea-powder-tata-original-imafzuf3n8zaangq.jpeg?q=70"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Tata Tea <span class="quantity">750g</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹350</span><span class="sell">₹99</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://rukminim1.flixcart.com/image/416/416/l0lbrm80/tea/p/1/n/-original-imagccby8h3b5ayb.jpeg?q=70"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Taj Mahal Tea <span class="quantity">500g</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹159</span><span class="sell">₹39</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://m.media-amazon.com/images/I/61FYuomMBLL._SX679_.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Lipton Green Tea <span class="quantity">150g</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹199</span><span class="sell">₹49</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://m.media-amazon.com/images/I/41YDq-tchUL.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Fortune Mustard Oil <span class="quantity">1L</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹1099</span><span class="sell">₹249</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://m.media-amazon.com/images/I/71Y0DuEYXXL._SX679_.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Borges Olive Oil <span class="quantity">2L</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹159</span><span class="sell">₹59</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://m.media-amazon.com/images/I/51TH5xE+2sL._SY300_SX300_.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Fortune Refined Oil <span class="quantity">1L</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹649</span><span class="sell">₹199</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://m.media-amazon.com/images/I/51sH9BiicvL.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Patanjali Ghee <span class="quantity">1L</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹599</span><span class="sell">₹159</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://m.media-amazon.com/images/I/91idhnLyJqL._SY741_.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Mother Dairy Ghee <span class="quantity">1L</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹39</span><span class="sell">₹15</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://m.media-amazon.com/images/I/61aoHG0V6AL._SX679_.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Tata Salt <span class="quantity">1Kg</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹199</span><span class="sell">₹79</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://m.media-amazon.com/images/I/71Xj03FrWFL._SX679_.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Catch Coriander Powder <span class="quantity">350g</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹99</span><span class="sell">₹39</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://m.media-amazon.com/images/I/71AK6ErhjhL._SX679_.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Catch Turmeric Powder <span class="quantity">350g</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹99</span><span class="sell">₹35</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://m.media-amazon.com/images/I/61nBTJl53+L._SX679_.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Everest Laal Mirch <span class="quantity">200g</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹99</span><span class="sell">₹39</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://m.media-amazon.com/images/I/81UcOSIOfwL._SX679_.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Catch Garam Masala <span class="quantity">200g</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+        </div>
+      </figure>
+    </section>
+    <!--! Personal Hygeine  -->
+    <section id="product-section">
+      <!-- *? Header of the Section -->
+      <div class="prod-header">
+        <h2 class="heading-section">Personal Hygiene</h2>
+        <a class="head-link button--toggle" href="#" onClick="return false;"
+          >View all</a
+        >
+      </div>
+      <!-- *? Top Picks Figure with Item Article -->
+      <figure class="prod-line" id="top-picks">
+        <div class="carousel3">
+          <!--todo Cart Items individual -->
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹290</span><span class="sell">₹49</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://rukminim1.flixcart.com/image/416/416/l37mtu80/toothpaste/3/m/7/-original-imagednewzwuektg.jpeg?q=70"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Colgate Visible White <span class="quantity">150g</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹89</span><span class="sell">₹29</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://medineeds.in/wp-content/uploads/2020/08/61jx3tDnMbL._SL1000_.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Colgate Vedshakti <span class="quantity">200g</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹89</span><span class="sell">₹29</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://www.patanjaliayurved.net/assets/product_images/400x300/1543818897dantkantiadvanced400-300.png"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Patanjali DantKanti Adv <span class="quantity">150g</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹99</span><span class="sell">₹35</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://m.media-amazon.com/images/I/51ohHNHJutL._SY450_.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Sensodyne <span class="quantity">200g</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹89</span><span class="sell">₹29</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://www.jiomart.com/images/product/original/490258849/cinthol-lime-refreshing-deo-soap-125-g-pack-of-3-product-images-o490258849-p490258849-1-202203171034.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Cinthol Soap <span class="quantity">3N</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹109</span><span class="sell">₹39</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://www.bigbasket.com/media/uploads/p/l/40121404_4-dettol-bathing-bar-soap-skincare.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Dettol Soap <span class="quantity">5N</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹209</span><span class="sell">₹59</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://m.media-amazon.com/images/I/515TeZiUkHL._SL1000_.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Dove Bar <span class="quantity">5N</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹399</span><span class="sell">₹89</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://m.media-amazon.com/images/I/719Pta6fozL._SL1500_.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Beer Shampoo <span class="quantity">500ml</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹519</span><span class="sell">₹179</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://m.media-amazon.com/images/I/515IAgI9BqL._SL1500_.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Head & Shoulders <span class="quantity">1L</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹449</span><span class="sell">₹99</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://m.media-amazon.com/images/I/410n9Zsto+L.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Wow Onion Shampoo <span class="quantity">500ml</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹599</span><span class="sell">₹149</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://cdn.shopify.com/s/files/1/0521/3460/9077/products/26273_S2-8901030831393_800x.jpg?v=1663324774"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Sunsilk Shampoo <span class="quantity">1L</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹699</span><span class="sell">₹199</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://m.media-amazon.com/images/I/511hybSxXNL._SX425_.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Sunsilk Conditioner <span class="quantity">1L</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹349</span><span class="sell">₹149</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://m.media-amazon.com/images/I/71NAYjQXUCL._SY355_.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Wow Conditioner <span class="quantity">1L</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹399</span><span class="sell">₹129</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://m.media-amazon.com/images/I/51m9RQgDH2L._SL1000_.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Lorea'l Total Repair <span class="quantity">500ml</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+        </div>
+      </figure>
+    </section>
+    <!--! Beauty & Grooming  -->
+    <section id="product-section">
+      <!-- *? Header of the Section -->
+      <div class="prod-header">
+        <h2 class="heading-section">Beauty & Grooming</h2>
+        <a class="head-link button--toggle" href="#" onClick="return false;"
+          >View all</a
+        >
+      </div>
+      <!-- *? Top Picks Figure with Item Article -->
+      <figure class="prod-line" id="top-picks">
+        <div class="carousel4">
+          <!--todo Cart Items individual -->
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹259</span><span class="sell">₹79</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://m.media-amazon.com/images/I/61dSZR8IqbL._SX679_.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Neutrogena SPF 50+ <span class="quantity">50ml</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹399</span><span class="sell">₹89</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://m.media-amazon.com/images/I/51NYSJRXJ6L._SL1000_.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Nivia Men DarkSpot... <span class="quantity">150g</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹1099</span><span class="sell">₹259</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://m.media-amazon.com/images/I/51nFUxdgIZL._SL1000_.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              CeraVe Moisturizer <span class="quantity">650ml</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹1299</span><span class="sell">₹299</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://images-cdn.ubuy.co.in/639a313f1c1fdc2bff7a66b3-cetaphil-moisturizing-lotion-20-fl-oz.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Cetaphil Moisturizer <span class="quantity">600ml</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹499</span><span class="sell">₹69</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://cdn01.pharmeasy.in/dam/products_otc/S42554/wow-skin-science-vitamin-c-face-cream-50-ml-2-1658483783.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Wow VitaminC Cream <span class="quantity">100g</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹399</span><span class="sell">₹129</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://m.media-amazon.com/images/I/61N6xGyHCML._SL1500_.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Nivia Body Lotion <span class="quantity">750mL</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹1099</span><span class="sell">₹99</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://m.media-amazon.com/images/I/61-3Ld2-ljL._SL1500_.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Cetaphil Cleanser <span class="quantity">500ml</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹1299</span><span class="sell">₹179</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://m.media-amazon.com/images/I/71DpVDw9y3L._SL1500_.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              CeraVe Acne Cleanser <span class="quantity">600ml</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹599</span><span class="sell">₹79</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://m.media-amazon.com/images/I/515l3roH2LL._SL1000_.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Neutrogena Acne Wash <span class="quantity">500ml</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹259</span><span class="sell">₹69</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://m.media-amazon.com/images/I/81HJskN1SLL._SL1500_.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Wow Vit C Face Wash <span class="quantity">400ml</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹199</span><span class="sell">₹59</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://m.media-amazon.com/images/I/51tXjE2WQQL._SL1000_.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Himalya Neem Facewash <span class="quantity">300ml</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹399</span><span class="sell">₹99</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://buywow.s3.ap-south-1.amazonaws.com/upload/wow/WOW_VitaminC_Plus_serum/vitamincProduct.png"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Wow VitC Face Serum <span class="quantity">100ml</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹599</span><span class="sell">₹109</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://goodstrolley.in/wp-content/uploads/2019/11/WOW-Activated-Charcoal-Face-Mask-with-PM-2.5-Anti-Pollution-Shield-No-Parabens.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Wow Face Mask <span class="quantity">200g</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹799</span><span class="sell">₹129</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://m.media-amazon.com/images/I/71saAo1QqJL._SL1500_.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              CeraVe Eye Cream <span class="quantity">150g</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹99</span><span class="sell">₹29</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://m.media-amazon.com/images/I/71EGB3YVnJL._SL1500_.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Nivia Lip Balm <span class="quantity">10g</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹149</span><span class="sell">₹29</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://m.media-amazon.com/images/I/61LxVq4BtGS._SL1500_.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Hair & Care Oil <span class="quantity">250ml</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹199</span><span class="sell">₹49</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://m.media-amazon.com/images/I/61TW27tvHAS.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Bajaj Almonds Hair Oil <span class="quantity">500ml</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹99</span><span class="sell">₹39</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://www.jiomart.com/images/product/original/490004775/dabur-amla-hair-oil-450-ml-product-images-o490004775-p490004775-0-202207282044.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Dabur Amla Hair Oil <span class="quantity">300ml</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹399</span><span class="sell">₹99</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://cdn01.pharmeasy.in/dam/products_otc/E60594/wow-skin-science-onion-black-seed-hair-oil-100-ml-with-comb-2-1658484107.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Wow Onion Hair Oil <span class="quantity">300ml</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹299</span><span class="sell">₹79</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://m.media-amazon.com/images/I/61mr4rOOm5S._SX522_.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Gillette Mach3 <span class="quantity">1N</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹129</span><span class="sell">₹39</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://m.media-amazon.com/images/I/71UgNqA9FEL._SL1500_.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Gillette Shaving Cream <span class="quantity">1N</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+        </div>
+      </figure>
+    </section>
+    <!--! Home Essentials  -->
+    <section id="product-section">
+      <!-- *? Header of the Section -->
+      <div class="prod-header">
+        <h2 class="heading-section">Home Essentials</h2>
+        <a class="head-link button--toggle" href="#" onClick="return false;"
+          >View all</a
+        >
+      </div>
+      <!-- *? Top Picks Figure with Item Article -->
+      <figure class="prod-line" id="top-picks">
+        <div class="carousel5">
+          <!--todo Cart Items individual -->
+
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹159</span><span class="sell">₹79</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://rukminim1.flixcart.com/image/416/416/ktx9si80/washing-powder/z/i/o/plus-jasmine-and-rose-tide-original-imag75zkzrhxvve8.jpeg?q=70"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Tide Detergent <span class="quantity">1Kg</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹149</span><span class="sell">₹69</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://rukminim1.flixcart.com/image/416/416/kh9gbrk0/washing-powder/f/e/s/1-easy-wash-surf-excel-original-imafxbdfj6vpjzrh.jpeg?q=70"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Surf Excel Easywash <span class="quantity">1Kg</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹169</span><span class="sell">₹85</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://rukminim1.flixcart.com/image/416/416/xif0q/washing-powder/9/h/c/-original-imagk28zhv5tzkm6.jpeg?q=70"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Ariel Detergent <span class="quantity">1Kg</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹229</span><span class="sell">₹89</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://rukminim1.flixcart.com/image/416/416/l2nmnww0/liquid-detergent/v/h/y/-original-imagdycdcfhg7nky.jpeg?q=70"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Surf Excel Liquid <span class="quantity">1L</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹299</span><span class="sell">₹79</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://m.media-amazon.com/images/I/718pyLDBeZL._SL1500_.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Godrej Ezee <span class="quantity">750</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹49</span><span class="sell">₹9</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://rukminim1.flixcart.com/image/416/416/j9fy7bk0/washing-bar/z/a/2/value-pack-250-surf-excel-original-imaez6hxruhtczrx.jpeg?q=70"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Surf Excel Bar <span class="quantity">1N</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹39</span><span class="sell">₹9</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://rukminim1.flixcart.com/image/416/416/l52sivk0/dish-washing-bar/i/t/l/-original-imagftzbhhcgcuh6.jpeg?q=70"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Vim Bar <span class="quantity">1N</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹199</span><span class="sell">₹49</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://m.media-amazon.com/images/I/61-4eJ-pn0L._SY450_.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Vim Liquid <span class="quantity">300mL</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹99</span><span class="sell">₹29</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://rukminim1.flixcart.com/image/416/416/xif0q/toilet-cleaner/o/t/m/-original-imagjae3szdgawx4.jpeg?q=70"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Harpic <span class="quantity">1N</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹99</span><span class="sell">₹39</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://rukminim1.flixcart.com/image/416/416/kyxb9u80/glass-cleaner/k/p/8/-original-imagbfxk68feszza.jpeg?q=70"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Colin Cleaner <span class="quantity">1L</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹119</span><span class="sell">₹49</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://rukminim1.flixcart.com/image/416/416/xif0q/bathroom-floor-cleaner/9/1/x/-original-imagkgk3hyu4czfe.jpeg?q=70"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Lizol Disinfactant <span class="quantity">1L</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹169</span><span class="sell">₹39</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://rukminim1.flixcart.com/image/416/416/juk4gi80/air-freshener/9/x/h/270-liquid-morning-misty-meadows-godrej-aer-original-imaffnk4wajfeny7.jpeg?q=70"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Godred Air Freshner <span class="quantity">1N</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹299</span><span class="sell">₹89</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://rukminim1.flixcart.com/image/416/416/l5iid8w0/air-freshener/o/k/w/-original-imagg6ksg96bdjs2.jpeg?q=70"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Odonil Bars <span class="quantity">4N</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹199</span><span class="sell">₹79</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://m.media-amazon.com/images/I/611IGFmQ98L._SL1500_.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Black Hit <span class="quantity">1N</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+          <article class="item carousel-cell">
+            <div class="price">
+              <span class="cost">₹229</span><span class="sell">₹89</span>
+            </div>
+            <div class="photo">
+              <img
+                src="https://m.media-amazon.com/images/I/71MX1WuV1JL._SL1500_.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="product-name">
+              Red Hit <span class="quantity">1N</span>
+            </h4>
+            <a class="add-cart" href="#top-picks" onClick="return false;"
+              >Add to Basket</a
+            >
+          </article>
+        </div>
+      </figure>
+    </section>
+
+    <a
+      href=""
+      style="text-decoration: none; color: dodgerblue; margin-left: 1rem"
+      >Request a Product</a
+    >
+
+    <footer style="margin: 5rem 0">
+      <h3>© Paytm Groceries LTD 2023</h3>
+    </footer>
+
+    <!-- *! Own Scripts -->
+    <script src="cartadd.js"></script>
+
+    <!-- *! Sample Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- *! Swiper -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+
+    <!-- ! Flickity  -->
+    <script>
+      var flkty = new Flickity(".carousel", {
+        // options
+        cellAlign: "left",
+        freeScroll: true,
+        contain: true,
+        pageDots: false,
+        wrapAround: true,
+        autoPlay: true,
+        autoPlay: 1700,
+        pauseAutoPlayOnHover: false,
+        prevNextButtons: false,
+      });
+
+      var flkty = new Flickity(".carousel");
+
+      // Second Row
+      var flkty1 = new Flickity(".carousel1", {
+        // options
+        cellAlign: "left",
+        freeScroll: true,
+        contain: true,
+        pageDots: false,
+        wrapAround: true,
+        autoPlay: true,
+        autoPlay: 2000,
+        pauseAutoPlayOnHover: false,
+        prevNextButtons: false,
+      });
+
+      var flkty1 = new Flickity(".carousel1");
+      // 3Rd Row
+      var flkty1 = new Flickity(".carousel2", {
+        // options
+        cellAlign: "left",
+        freeScroll: true,
+        contain: true,
+        pageDots: false,
+        wrapAround: true,
+        autoPlay: true,
+        autoPlay: 1700,
+        pauseAutoPlayOnHover: false,
+        prevNextButtons: false,
+      });
+
+      var flkty1 = new Flickity(".carousel2");
+      // 4th Row
+      var flkty1 = new Flickity(".carousel3", {
+        // options
+        cellAlign: "left",
+        freeScroll: true,
+        contain: true,
+        pageDots: false,
+        wrapAround: true,
+        autoPlay: true,
+        autoPlay: 2000,
+        pauseAutoPlayOnHover: false,
+        prevNextButtons: false,
+      });
+
+      var flkty1 = new Flickity(".carousel3");
+      // 5th Row
+      var flkty1 = new Flickity(".carousel4", {
+        // options
+        cellAlign: "left",
+        freeScroll: true,
+        contain: true,
+        pageDots: false,
+        wrapAround: true,
+        autoPlay: true,
+        autoPlay: 1700,
+        pauseAutoPlayOnHover: false,
+        prevNextButtons: false,
+      });
+
+      var flkty1 = new Flickity(".carousel4");
+      // 6th Row
+      var flkty1 = new Flickity(".carousel5", {
+        // options
+        cellAlign: "left",
+        freeScroll: true,
+        contain: true,
+        pageDots: false,
+        wrapAround: true,
+        autoPlay: true,
+        autoPlay: 2000,
+        pauseAutoPlayOnHover: false,
+        prevNextButtons: false,
+      });
+
+      var flkty1 = new Flickity(".carousel5");
+      var isFlickity = true;
+      var toggleButton = document.querySelector(".button--toggle");
+      toggleButton.addEventListener("click", function () {
+        if (isFlickity) {
+          flkty.destroy();
+        } else {
+          flkty = new Flickity(".carousel", {
+            // options
+            cellAlign: "left",
+            freeScroll: true,
+            contain: true,
+            pageDots: false,
+            wrapAround: true,
+            autoPlay: true,
+            autoPlay: 1700,
+            pauseAutoPlayOnHover: false,
+            prevNextButtons: false,
+          });
+        }
+        isFlickity = !isFlickity;
+      });
+    </script>
+  </body>
+</html>

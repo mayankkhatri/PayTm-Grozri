@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--? CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- *? Title | Logo -->
+    <title>Shopping Bag</title>
+    <link rel="icon" href="https://paytm.com/favicon.ico" type="image/x-icon" />
+    <style>
+      .process {
+        margin-top: 1.5rem;
+      }
+      #pay {
+        border: 0.1rem solid #2332668a;
+      }
+      p {
+        margin: 1.2rem 0 0.8rem 0;
+        color: #233266;
+      }
+      .scan {
+        margin-top: 2rem;
+        margin-bottom: 10rem;
+      }
+      .scan a {
+        text-decoration: none;
+        font-size: 1.1rem;
+        color: #54c1ef;
+      }
+      #qr {
+        margin: 1rem auto;
+        transform: translateX(-12.5%);
+        width: 200px;
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="index.html"
+        ><img
+          src="https://download.logo.wine/logo/Paytm/Paytm-Logo.wine.png"
+          alt="PayTm Groceries"
+          class="logo"
+      /></a>
+      <div class="cart-ic">
+        <a href="cart.html"
+          ><ion-icon class="cart-icon" name="basket"></ion-icon
+        ></a>
+        <a href="cart.html"><span class="cart-span">0</span></a>
+      </div>
+    </header>
+    <section style="text-align: center">
+      <h4 class="middle-head">Pay via UPI</h4>
+      <div class="process"></div>
+      <a href="" class="choose" id="pay"
+        >Click Here to Pay ₹<span class="total-money">0</span></a
+      >
+      <p>If above link doesn't work</p>
+      <a href="https://paytm.me/9rqy-ef" class="choose"
+        >Pay ₹<span class="total-money-t">0</span> with UPI</a
+      >
+      <div class="scan">
+        <h4 class="middle-head">Screenshot | Scan QR</h4>
+        <div id="qr"></div>
+      </div>
+    </section>
+
+    <!--! Payment Script  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script>
+      //? Generating Payment Link via Total amount
+      let cart = localStorage.getItem("totalCost");
+      cart = parseInt(cart);
+
+      document.querySelector(".total-money").innerHTML = cart;
+      document.querySelector(".total-money-t").innerHTML = cart;
+
+      payLink = `upi://pay?pa=7428655030@paytm&pn=Mayank%20Khatri&cu=INR&am=${cart}`;
+
+      document.getElementById("pay").href = payLink;
+      // Generating QR COde
+      var qrcode = new QRCode("qr", payLink);
+    </script>
+    <!--! Sample Scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <!--! Custom Scripts -->
+    <script src="place.js"></script>
+    <script src="cartadd.js"></script>
+  </body>
+</html>
