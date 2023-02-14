@@ -463,7 +463,7 @@ input {
 }
 .as-head {
   margin-top: 2rem;
-  margin-right: rem;
+  font-size: 1.1rem;
   font-size: 1.3rem;
   display: flex;
   align-items: center;
