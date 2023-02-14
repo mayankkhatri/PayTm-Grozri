@@ -52,6 +52,25 @@
       .below {
         display: none;
       }
+      .wp-lg {
+        width: 80px;
+        border-radius: 50%;
+      }
+      .chat {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+      }
+      .chat p {
+        position: absolute;
+        font-size: 1rem;
+        top: -45%;
+        left: -37%;
+        background-color: #233266;
+        color: white;
+        padding: 0.2rem 0.4rem;
+        border-radius: 0.8rem;
+      }
     </style>
   </head>
   <body>
@@ -92,17 +111,30 @@
       <h4 style="font-size: 2.1rem" class="middle-head">Cash on Delivery</h4>
       <p class="disc">
         <strong>Shipping Charges</strong> are applicable only on Cash on
-        Delivery | <strong>Pay Online to get Free Express Delivery</strong>
+        Delivery | Pay Online to get Free Express Delivery
       </p>
       <h4>
         Order Total : ₹<span class="bsktcost">0</span> + ₹<span>349</span> =
         ₹<span class="ttlcost">0</span>
       </h4>
-      <a href="#" onClick="return false;" class="place choose">Pay Cash on Delivery</a>
+      <a href="#" onClick="return false;" class="place choose"
+        >Pay Cash on Delivery</a
+      >
       <p style="color: white; margin-top: 0rem" class="redprt">
         Sorry Cash on Delivery is not Available in your area
       </p>
     </section>
+
+    <div class="chat">
+      <a href="https://wa.link/iqmeyv">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/124/124034.png"
+          alt=""
+          class="wp-lg"
+        />
+      </a>
+      <p>Chat with us</p>
+    </div>
 
     <!--! Payment Script  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
