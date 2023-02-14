@@ -1,10 +1,23 @@
+//! Adding Values to inputs in the form
+let cart = localStorage.getItem("totalCost");
+cart = parseInt(cart);
+
+let cartItems = localStorage.getItem("cartNumbers");
+cartItems = parseInt(cartItems);
+
+let cartProd = localStorage.getItem("productsInCart");
+document.getElementById("crtvlue").value = cart;
+document.getElementById("itemsname").value = cartProd;
+document.getElementById("numit").value = cartItems;
+
+
 //! Form Submit to Google Sheet
 let form = document.querySelector("form");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   let data = new FormData(form);
   fetch(
-    "https://script.google.com/macros/s/AKfycbw9MK0YYgvHV3_J9JQH5lKdCW_MHlJUDJG8S8oxFyqCNoyYBHIBmhdLoyZAbjJd4Aan/exec",
+    "https://script.google.com/macros/s/AKfycbwWLi0-WYU29TWYJL7M20n7pgYecaFPZuB-BHNr-B-9d1i7I236rE9HvwlsMw2acVgE/exec",
     {
       method: "POST",
       body: data,
