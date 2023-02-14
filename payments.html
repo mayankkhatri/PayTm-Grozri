@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2REXLY9XNX"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-2REXLY9XNX');
-    </script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -44,6 +35,20 @@
         width: 200px;
         height: 200px;
       }
+      .blink-anim {
+        animation: blink ease-in 3s infinite;
+      }
+      @keyframes blink {
+        0% {
+          border-color: #54c1ef;
+        }
+        50% {
+          border-color: #2332665f;
+        }
+        100% {
+          border-color: #233266ba;
+        }
+      }
     </style>
   </head>
   <body>
@@ -64,17 +69,34 @@
     <section style="text-align: center">
       <h4 class="middle-head">Pay via UPI</h4>
       <div class="process"></div>
-      <a href="" class="choose" id="pay"
+      <a href="" class="choose blink-anim" id="pay"
         >Click Here to Pay ₹<span class="total-money">0</span></a
       >
       <p>If above link doesn't work</p>
       <a href="https://paytm.me/9rqy-ef" class="choose"
         >Pay ₹<span class="total-money-t">0</span> with UPI</a
       >
-      <div class="scan">
-        <h4 class="middle-head">Screenshot | Scan QR</h4>
+      <div class="scan" style="margin-bottom: 5rem">
+        <h4 style="margin-top: 0rem" class="middle-head">
+          Screenshot | Scan QR
+        </h4>
         <div id="qr"></div>
       </div>
+    </section>
+    <section style="text-align: center">
+      <h4 style="font-size: 2.1rem" class="middle-head">Cash on Delivery</h4>
+      <p class="disc">
+        <strong>Shipping Charges</strong> are applicable only on Cash on
+        Delivery | Pay Online to get Free Express Delivery
+      </p>
+      <h4>
+        Order Total : ₹<span class="bsktcost">0</span> + ₹<span>349</span> =
+        ₹<span class="ttlcost">0</span>
+      </h4>
+      <a href="#" onClick="return false;" class="place choose">Place Order</a>
+      <p style="color: white; margin-top: 0rem" class="redprt">
+        Sorry Cash on Delivery is not Available in your area
+      </p>
     </section>
 
     <!--! Payment Script  -->
@@ -84,14 +106,25 @@
       let cart = localStorage.getItem("totalCost");
       cart = parseInt(cart);
 
+      codCOst = cart + 349;
+
       document.querySelector(".total-money").innerHTML = cart;
       document.querySelector(".total-money-t").innerHTML = cart;
+
+      document.querySelector(".bsktcost").innerHTML = cart;
+      document.querySelector(".ttlcost").innerHTML = codCOst;
 
       payLink = `upi://pay?pa=7428655030@paytm&pn=Mayank%20Khatri&cu=INR&am=${cart}`;
 
       document.getElementById("pay").href = payLink;
       // Generating QR COde
       var qrcode = new QRCode("qr", payLink);
+      // The cod prompt
+      let placeBtn = document.querySelector(".place");
+      let promptcod = document.querySelector(".redprt");
+      placeBtn.addEventListener("click", () => {
+        promptcod.style.color = "red";
+      });
     </script>
     <!--! Sample Scripts -->
     <script
