@@ -173,18 +173,6 @@ header {
   color: white;
 }
 
-
-.swipe-text {
-  position: absolute;
-  width: 100%;
-  top: 50%;
-  left: 60%;
-  transform: translate(-50%, -50%);
-  font-size: 1.2rem;
-  z-index: 6;
-  border-radius: 1.2rem;
-  color: white;
-}
 .cards {
   border-radius: 1.2rem;
   width: 95vw;
