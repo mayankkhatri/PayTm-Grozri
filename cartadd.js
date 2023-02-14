@@ -1019,13 +1019,6 @@ function deleteButtons() {
   }
 }
 
-function refreshOnLoad() {
-  let carosel = document.querySelector(".card");
-  setTimeout(() => {
-    window.location = "https://paytmgroceries.shop";
-  }, 8000);
-}
-refreshOnLoad();
 
 onLoadCartNumbers();
 displayCart();
