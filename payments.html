@@ -49,6 +49,9 @@
           border-color: #233266ba;
         }
       }
+      .below {
+        display: none;
+      }
     </style>
   </head>
   <body>
@@ -72,10 +75,12 @@
       <a href="" class="choose blink-anim" id="pay"
         >Click Here to Pay ₹<span class="total-money">0</span></a
       >
-      <p>If above link doesn't work</p>
-      <a href="https://paytm.me/9rqy-ef" class="choose"
-        >Pay ₹<span class="total-money-t">0</span> with UPI</a
-      >
+      <div class="below">
+        <p>If above link doesn't work</p>
+        <a href="https://paytm.me/9rqy-ef" class="choose"
+          >Pay ₹<span class="total-money-t">0</span> with UPI</a
+        >
+      </div>
       <div class="scan" style="margin-bottom: 5rem">
         <h4 style="margin-top: 0rem" class="middle-head">
           Screenshot | Scan QR
@@ -124,6 +129,14 @@
       let promptcod = document.querySelector(".redprt");
       placeBtn.addEventListener("click", () => {
         promptcod.style.color = "red";
+      });
+      // Above Link Doesn't work
+      var blow = document.querySelector(".below");
+      var above = document.querySelector("#pay");
+      above.addEventListener("click", () => {
+        setTimeout(() => {
+          blow.style.display = "block";
+        }, 2000);
       });
     </script>
     <!--! Sample Scripts -->
