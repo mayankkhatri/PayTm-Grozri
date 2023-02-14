@@ -194,7 +194,7 @@ header {
 .card {
   width: 350px;
   height: 197px;
-  background-color: #54c1ef;
+  background-color: black;
 }
 
 .swiper-pagination-bullet-active {
