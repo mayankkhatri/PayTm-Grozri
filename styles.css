@@ -446,6 +446,7 @@ input {
 }
 
 .magwrap {
+  margin-top: 2rem;
   position: relative;
 }
 .magwrap h4 {
