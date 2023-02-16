@@ -94,7 +94,7 @@ function availableSellers() {
             <span>Rating</span>
           </div>
           <div class="as-head mayank">
-            <span>Mayank Khatri</span>
+            <span style="color: black">Mayank Khatri</span>
             <span>Tommorow 11AM (Free)</span>
             <span
               style="display: flex; align-items: center"
