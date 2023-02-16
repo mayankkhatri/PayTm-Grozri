@@ -757,7 +757,6 @@ let products = [
 // *? Getting cart anchors as arrays
 
 let carts = document.querySelectorAll(".add-cart");
-console.log(carts);
 // *? Adding Event Listner to all of them
 
 for (let i = 0; i < carts.length; i++) {
@@ -819,7 +818,6 @@ function cartNumbers(product, action) {
   if (action) {
     localStorage.setItem("cartNumbers", productNumbers - 1);
     document.querySelector(".cart-span").textContent = productNumbers - 1;
-    console.log("action running");
   } else if (productNumbers) {
     localStorage.setItem("cartNumbers", productNumbers + 1);
     document.querySelector(".cart-span").textContent = productNumbers + 1;
@@ -938,10 +936,8 @@ function manageQuantity() {
 
   for (let i = 0; i < increaseButtons.length; i++) {
     decreaseButtons[i].addEventListener("click", () => {
-      console.log(cartItems);
       currentQuantity =
         decreaseButtons[i].parentElement.querySelector("span").textContent;
-      console.log(currentQuantity);
       currentProduct = decreaseButtons[
         i
       ].parentElement.previousElementSibling.previousElementSibling
@@ -949,7 +945,6 @@ function manageQuantity() {
         .textContent.toLocaleLowerCase()
         .replace(/ /g, "")
         .trim();
-      console.log(currentProduct);
 
       if (cartItems[currentProduct].incart > 1) {
         cartItems[currentProduct].incart -= 1;
@@ -962,10 +957,8 @@ function manageQuantity() {
     });
 
     increaseButtons[i].addEventListener("click", () => {
-      console.log(cartItems);
       currentQuantity =
         increaseButtons[i].parentElement.querySelector("span").textContent;
-      console.log(currentQuantity);
       currentProduct = increaseButtons[
         i
       ].parentElement.previousElementSibling.previousElementSibling
@@ -973,7 +966,6 @@ function manageQuantity() {
         .textContent.toLocaleLowerCase()
         .replace(/ /g, "")
         .trim();
-      console.log(currentProduct);
 
       cartItems[currentProduct].incart += 1;
       cartNumbers(cartItems[currentProduct]);
@@ -992,7 +984,6 @@ function deleteButtons() {
   let cartItems = localStorage.getItem("productsInCart");
   cartItems = JSON.parse(cartItems);
   let productName;
-  console.log(cartItems);
 
   for (let i = 0; i < deleteButtons.length; i++) {
     deleteButtons[i].addEventListener("click", () => {
