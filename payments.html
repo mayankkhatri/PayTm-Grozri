@@ -151,7 +151,7 @@
       document.querySelector(".bsktcost").innerHTML = cart;
       document.querySelector(".ttlcost").innerHTML = codCOst;
 
-      // payLink = `upi://pay?pa=7428655030@paytm&tn=Paytm%20Groceries%20Order%20Id:21DFR201&pn=Mayank%20Khatri&cu=INR&am=${cart}`;
+      payLink = `upi://pay?pa=7428655030@paytm&tn=Paytm%20Groceries%20Order%20Id:21DFR201&pn=Mayank%20Khatri&cu=INR&am=${cart}`;
 
       document.getElementById("pay").href = payLink;
       // Generating QR COde
