@@ -78,9 +78,10 @@ function availableSellers() {
   cart = parseInt(cart);
 
   let findSellerDiv = document.querySelector(".find-seller");
+  let randint = Math.floor((Math.random() * 10) + 1);
   findSellerDiv.innerHTML = `
   <div class="orderdtl">
-        <h4>Order ID: #21DFR201</h4>
+        <h4>Order ID: #21DFR20${randint}</h4>
         <p>
           Order Total: ₹<span class="order-total" style="margin-left: 0.2rem"
             >${cart}.00</span
